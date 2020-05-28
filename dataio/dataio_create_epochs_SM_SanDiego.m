@@ -33,7 +33,7 @@ function [] = dataio_create_epochs_SM_SanDiego(epoch_length, filter_band)
 tic
 disp('Creating epochs for San Diego lab JPFM SSVEP dataset');
 
-set_path = 'datasets\ssvep_sandiego';
+set_path = 'D:\workspace_matlab\bic_toolbox_mygit\bci_toolbox\datasets\ssvep_sandiego';
 dataSetFiles = dir([set_path '\s*.mat']);
 dataSetFiles = {dataSetFiles.name};
 % EEG montage
