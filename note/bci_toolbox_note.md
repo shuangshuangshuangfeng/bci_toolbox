@@ -2,7 +2,7 @@
 
 
 ## 安装使用
-0. 实验数据下载：San Diego Square Joint Frequnecy-Phase Modulation SSVEP (ftp://sccn.ucsd.edu/pub/cca_ssvep)
+0. 实验数据下载：San Diego Square Joint Frequnecy-Phase Modulation SSVEP ([ftp://sccn.ucsd.edu/pub/cca_ssvep](ftp://sccn.ucsd.edu/pub/cca_ssvep "ftp://sccn.ucsd.edu/pub/cca_ssvep"))
 1. 首先在matlab中加入项目路径，具体操作：命令行输入``pathtool``->添加文件夹->保存
 2. 用matlab打开后，在命令行窗口输入cd('项目根目录')，切换到项目根目录下
 3. 执行``setup.m``
@@ -19,14 +19,14 @@ dataio_create_epochs_SM_SanDiego(epoch_length, filter_band)
 
 
 
-## SSVEP详情
+## SSVEP处理详情
 
 
 ### 数据结构
 
-1. 训练数据/测试数据的数据结构
-**方法：** ``trainEEG = dataio_read_SSVEP(set,'train')``
-**返回：**
+1. 训练数据/测试数据的数据结构<br>
+**方法：** ``trainEEG = dataio_read_SSVEP(set,'train')``<br>
+**返回：**<br>
 ```
 data : cell{1xN} N subjects in dataset of STRUCT
         data.epochs 1x1 STRUCT 
