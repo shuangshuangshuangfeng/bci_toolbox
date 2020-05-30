@@ -65,7 +65,7 @@ classes_c = cellfun(@num2str,num2cell(1:12),'UniformOutput',0);
 stimulation_onset = 39;
 
 % save
-Config_path_SM = 'datasets\epochs\ssvep_sandiego\SM';
+Config_path_SM = 'D:\workspace_matlab\bic_toolbox_mygit\bci_toolbox\datasets\epochs\ssvep_sandiego\SM';
 
 if(~exist(Config_path_SM,'dir'))
     mkdir(Config_path_SM);

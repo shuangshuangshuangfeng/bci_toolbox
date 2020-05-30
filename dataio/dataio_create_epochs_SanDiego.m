@@ -31,7 +31,7 @@ function [] = dataio_create_epochs_SanDiego(epoch_length, filter_band)
 
 disp('Creating epochs for Tsinghua lab JPFM SSVEP dataset');
 
-set_path = 'datasets\sandiego_ssvep';
+set_path = 'D:\workspace_matlab\bic_toolbox_mygit\bci_toolbox\datasets\ssvep_sandiego';
 dataSetFiles = dir([set_path '\s*.mat']);
 dataSetFiles = {dataSetFiles.name};
 % EEG montage
@@ -112,7 +112,7 @@ end
 
 % save
 disp('Saving dataset SANDIEGO-SSVEP');
-Config_path = 'datasets\epochs\sandiego_ssvep\';
+Config_path = 'D:\workspace_matlab\bic_toolbox_mygit\bci_toolbox\datasets\epochs\ssvep_sandiego\BM\';
 
 if(~exist(Config_path,'dir'))
     mkdir(Config_path);

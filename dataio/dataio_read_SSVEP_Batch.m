@@ -5,7 +5,7 @@ function [data] = dataio_read_SSVEP_Batch(set, datatype)
 % last modified : -- -- --
 % Okba Bekhelifi, <okba.bekhelif@univ-usto.dz>
 
-path = 'datasets\epochs\';
+path = 'D:\workspace_matlab\bic_toolbox_mygit\bci_toolbox\datasets\epochs\';
 switch upper(set)
     
     case 'SSVEP_EXOSKELETON'

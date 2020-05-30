@@ -2,14 +2,14 @@ function [results, output, model] = run_analysis_SSVEP(set, approach, report)
 %RUN_ANALYSIS_SSVEP Summary of this function goes here
 %   Detailed explanation goes here
 %operations:
-%                  - load train/test data
-%                  - spatial filtering
-%                  - feature extraction on train data
-%                  - train classifier
-%                  - feature extraction on test data
-%                  - predict test data classes
+%                  - load train/test data， 训练数据/测试数据
+%                  - spatial filtering  空间过滤器
+%                  - feature extraction on train data 训练数据的特征提取
+%                  - train classifier  训练分类器
+%                  - feature extraction on test data  测试数据的特征提取
+%                  - predict test data classes  测试数据类别预测
 %                  - display/plot classification and characters detection
-%                  results
+%                  results 显示分类结果
 % Arguments:
 %     In:
 %         set : STR dataset title, from the set of available and epoched

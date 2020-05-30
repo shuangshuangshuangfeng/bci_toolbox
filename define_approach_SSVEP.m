@@ -8,7 +8,7 @@ tic
 set.title = 'SSVEP_SANDIEGO';
 % set.title = 'SSVEP_LARESI';
 set.mode = 'SM';
-report = 0;
+report = 0; %这个是什么意思？？
 %% vanilla CCA
 % approach.classifier.learner = 'CCA';
 % approach.classifier.options.harmonics = 2;
@@ -22,15 +22,15 @@ report = 0;
 % approach.classifier.options.lambda = [0, 0.2];
 % approach.classifier.options.mode = 'sync';
 %% Mset CCA
-approach.classifier.learner = 'MSETCCA';
-approach.classifier.options.n_comp = 1;
-approach.classifier.options.mode = 'sync';
+%approach.classifier.learner = 'MSETCCA';
+%approach.classifier.options.n_comp = 1;
+%approach.classifier.options.mode = 'sync';
 %% MLR-SVM
-% approach.features.alg = 'MLR';
-% approach.features.options = [];
-% approach.classifier.normalization = 'ZSCORE';
-% approach.classifier.learner = 'SVM';
-% approach.classifier.options.kernel.type = 'LIN';
+approach.features.alg = 'MLR';
+approach.features.options = [];
+approach.classifier.normalization = 'ZSCORE';
+approach.classifier.learner = 'SVM';
+approach.classifier.options.kernel.type = 'LIN';
 %% MLR-HKL
 % approach.features.alg = 'MLR';
 % approach.classifier.learner = 'HKL';

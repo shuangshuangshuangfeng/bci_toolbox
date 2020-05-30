@@ -1,10 +1,10 @@
 function y=refsig(f, S, T, H)
 
 
-% f-- the fundermental frequency
-% S-- the sampling rate
-% T-- the number of sampling points
-% H-- the number of harmonics
+% f-- the fundermental frequency  基频
+% S-- the sampling rate 采样率
+% T-- the number of sampling points  样本点
+% H-- the number of harmonics  谐波数
 
 
 for i=1:H

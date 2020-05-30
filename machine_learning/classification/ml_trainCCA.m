@@ -10,9 +10,9 @@ if(~isfield(alg, 'options'))
     alg.options.harmonics = 2;
 end
 
-[samples, ~, ~] = size(features.signal);
-[frqs, idle_ind] = utils_get_frequencies(features.stimuli_frequencies);
-stimuli_count = length(frqs);
+[samples, ~, ~] = size(features.signal); % 信号大小
+[frqs, idle_ind] = utils_get_frequencies(features.stimuli_frequencies);  % Y特征
+stimuli_count = length(frqs); %N
 reference_signals = cell(1, stimuli_count);
 
 for stimulus=1:stimuli_count

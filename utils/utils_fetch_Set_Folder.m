@@ -6,7 +6,7 @@ function [nSubjects] = utils_fetch_Set_Folder(set)
 % last modified : -- -- --
 % Okba Bekhelifi, <okba.bekhelif@univ-usto.dz>
 
-path = 'datasets\epochs\';
+path = 'D:\workspace_matlab\bic_toolbox_mygit\bci_toolbox\datasets\epochs\ssvep_sandiego';
 datasets = dir(path);
 datasets = {datasets(3:end).name};
 set_idx = ~cellfun(@isempty, (strfind(upper(datasets), set.title)));
